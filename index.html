@@ -49,7 +49,7 @@
     <!-- navbar -->
 
     <div class="w-full sticky top-0 z-50 bg-white">
-        <div class="container mx-auto px-4 rounded-xl flex items-center py-4 justify-between shadow-lg  ">
+        <div class="container mx-auto px-4 rounded-xl flex items-center py-4 justify-between shadow-lg relative ">
             <div class="logo flex ">
                 <img class="w-full mr-1" src="images/logo.png">
                 <h2 class="text-3xl font-bold text-heading text-main">Smart<span class="text-[#06B6D4]">Nest</span></h2>
@@ -75,8 +75,23 @@
                     <a class=" md:inline-block hidden bg-gradient-to-r from-gradientStart to-gradientEnd text-md px-3 py-2 rounded-xl text-white shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease"
                         href="#">Get Started</a>
                 </div>
-                <div class="toggle-mobile text-2xl  block lg:hidden px-3 "><i
-                        class="fa-solid fa-bars text-heading flex items-center bg-gradient-to-r from-gradientStart to-gradientEnd bg-clip-text text-transparent"></i></div>
+                <div onclick="toggle()" class="toggle-mobile text-2xl  block lg:hidden px-3 "><i
+                        class="fa-solid fa-bars text-heading flex items-center bg-gradient-to-r from-gradientStart to-gradientEnd bg-clip-text text-transparent"></i>
+                    </div>
+                    <div id="toggle" class="mobile-menu absolute top-full left-0 w-full h-0 bg-white rounded-lg transition-all duration-300 ease overflow-hidden">
+                        <ul>
+                            <li class="text-md text-[#5B5FEF] font-medium"><a class="decoration-none px-4 py-2 block"
+                            href="#">Home</a></li>
+                    <li class="text-md text-[#64748B] hover:text-[#5B5FEF]  font-medium"><a
+                            class="decoration-none px-4 py-2 block" href="#">Features</a></li>
+                    <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
+                            class="decoration-none px-4 py-2 block" href="#">Showcase</a></li>
+                    <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
+                            class="decoration-none px-4 py-2 block" href="#">Pricing</a></li>
+                    <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
+                            class="decoration-none px-4 py-2 block" href="#">Contact</a></li>
+                        </ul>
+                    </div>
             </div>
         </div>
     </div>
@@ -302,7 +317,7 @@
                 <div class="col-span-12 lg:col-span-4 content-part py-6">
                     <div class="feature-tag flex  mb-2">
                         <span
-                            class="text-[10px] sm:text-sm text-blue-900 font-extrabold sm:font-bold py-1 px-3 bg-gradient-to-r from-gradientStart/20 to-gradientEnd/20 inline rounded-2xl text-center uppercase tracking-[0.25rem] mb-3">Product
+                            class="text-[14px] sm:text-sm text-blue-900  font-bold py-1 px-3 bg-gradient-to-r from-gradientStart/20 to-gradientEnd/20 inline rounded-2xl text-center uppercase tracking-[0.25rem] mb-3">Product
                             Showcase</span>
                     </div>
                     <h1 class="text-[#0F172A] font-bold font-main  text-2xl sm:text-4xl  mb-3 mt">Control Every Cornor
@@ -315,9 +330,9 @@
                         one intituvted dashboard. Your Home, Your Way.</p>
 
                     <div class="product flex items-center mt-5 gap-4">
-                        <div
+                        <div 
                             class="icon-background size-12 sm:size-15  bg-purple-100 rounded-full flex items-center justify-center">
-                            <i class="fa-solid fa-lightbulb text-purple-800 text-xl sm:text-2xl"></i></div>
+                            <i onclick="change()" id="bulb" class="fa-solid fa-lightbulb text-purple-800 text-xl sm:text-2xl"></i></div>
                         <div class="product-content">
                             <h4 class="text-md font-main font-bold">Smart Lighting</h4>
                             <p class="text-sm text-gray-700">Control brightness,color & schedules</p>
@@ -388,13 +403,13 @@
                     <br class="hidden sm:block">No hidden fees.Cancel anytime.
                 </p>
                 <div class="filter py-4 flex items-center gap-4 justify-center">
-                    <span class="tex-xs font-medium">Monthly</span>
-                    <div
+                    <span class="tex-xs font-bold">Monthly</span>
+                    <div onclick="ball()"
                         class="filter-pill bg-gradient-to-r from-gradientStart to-gradientEnd p-1 h-[22px] w-[38px] rounded-full flex items-center">
-                        <div class="ball size-3.5 rounded-full bg-white"></div>
+                        <div  class="ball size-3.5 rounded-full bg-white"></div>
                     </div>
                     <div class="offer">
-                        <span class="tex-xs font-medium mr-1">Yearly</span>
+                        <span class="tex-xs font-bold mr-1">Yearly</span>
                         <div class="inline saving bg-green-200 px-2 py-1 rounded-lg text-green-700 text-xs font-medium">
                             Save 20%
                         </div>
@@ -562,7 +577,7 @@
                 <div class="contact-contnet  col-span-12 lg:col-span-6">
                     <div class="feature-tag flex  mb-2">
                     <span
-                        class="text-xs md:text-sm text-blue-900 font-bold py-1 px-3 bg-gradient-to-r from-gradientStart/20 to-gradientEnd/20 inline rounded-2xl text-center uppercase tracking-[0.25rem] mt-5 mb-3">Contact us</span>
+                        class="text-[14px] text-blue-900 font-bold py-1 px-3 bg-gradient-to-r from-gradientStart/20 to-gradientEnd/20 inline rounded-2xl text-center uppercase tracking-[0.25rem] mt-5 mb-3">Contact us</span>
                 </div>
                 <div class="title">
                 <h2 class="text-[#0F172A] font-bold font-main  text-2xl sm:text-4xl  mb-4">Let's Build Your
@@ -597,7 +612,8 @@
                         <div class="contact-icon size-12 bg-green-100 rounded-xl flex items-center justify-center"><i class="fa-solid fa-clock text-3xl text-green-700"></i></div>
                         <div class="contact-details">
                             <h5 class="text-md font-bold text-[#0F172A]">Support Hours</h5>
-                            <p class="text-sm font-medium text-gray-500">MON-FRI<br>
+                            <p class="text-xs
+                             font-medium text-gray-500">MON-FRI<br>
                             10AM-6PM</p>
                         </div>
                     </div>
@@ -730,6 +746,44 @@
         </div>
         </div>
      </div>
+
+
+     <script>
+
+        let i =document.getElementById('toggle')
+        function toggle(){
+          if(i.style.height==='320px'){
+              i.style.height='0'
+          }
+          else {
+            i.style.height='320px'
+          }
+
+        }
+
+        let colors=["#facc15",
+          "#ef4444",
+            "#22c55e",
+        "#3b82f6",
+           "#a855f7"]
+
+     let newcolor=document.getElementById('bulb')
+      let j=0;
+     function change(){
+     j++
+     if (j>=colors.length) {
+        j=0
+     }
+     newcolor.style.color=colors[j]
+     }
+
+     let filter=document.getElementsByClassName('ball')
+
+     function ball(){
+        filter.style.justifyContent='end'
+     }
+
+     </script>
 
 
 
