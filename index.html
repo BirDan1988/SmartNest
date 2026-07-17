@@ -786,21 +786,20 @@
 
         if(filter.style.justifyContent==='end'){
             filter.style.justifyContent='start'
-            pr1.innerText='$4.99'
-            pr2.innerText='$9.99'
-            pr3.innerText='$14.99'
+            pr1.innerHTML='$4.99 <span class="text-gray-500 text-xs font-medium">/month</span>'
+            pr2.innerHTML='$9.99 <span class="text-gray-500 text-xs font-medium">/month</span>'
+            pr3.innerHTML='$14.99 <span class="text-gray-500 text-xs font-medium">/month</span>'
 
         }
 
         else {
             filter.style.justifyContent='end'
-              pr1.innerText='$49.99'
-              pr2.innerText='$99.99'
-              pr3.innerText='$149.99'
+              pr1.innerHTML='$49.99 <span class="text-gray-500 text-xs font-medium">/year</span>'
+              pr2.innerHTML='$99.99 <span class="text-gray-500 text-xs font-medium">/year</span>'
+              pr3.innerHTML='$149.99 <span class="text-gray-500 text-xs font-medium">/year</span>'
         }
         
      }
-
      </script>
 
 
