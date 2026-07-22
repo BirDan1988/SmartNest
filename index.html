@@ -48,8 +48,8 @@
 
     <!-- navbar -->
 
-    <div class="w-full sticky top-0 z-50 bg-white">
-        <div class="container mx-auto px-4 rounded-xl flex items-center py-4 justify-between shadow-lg relative">
+    <div class="w-full sticky top-0 z-50 bg-white shadow-lg rounded-xl">
+        <div class="container mx-auto px-4  flex items-center py-4 justify-between  relative">
             <div class="logo flex items-end">
                 <img class="w-10 h-10 mr-1" src="images/logo.png">
                 <h2 class="text-3xl leading-none font-bold text-heading text-main">Smart<span class="text-[#06B6D4]">Nest</span></h2>
@@ -61,7 +61,7 @@
                     <li class="text-md text-[#64748B] hover:text-[#5B5FEF]  font-medium"><a
                             class="decoration-none px-4 py-2" href="#">Features</a></li>
                     <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
-                            class="decoration-none px-4 py-2" href="#">Showcase</a></li>
+                            class="decoration-none px-4 py-2" href="#">Solutions</a></li>
                     <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
                             class="decoration-none px-4 py-2" href="#">Pricing</a></li>
                     <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
@@ -105,7 +105,7 @@
                         <span class=" text-sm  text-[#5B5FEF] font-medium "><i class="fa-solid fa-bolt mr-1"></i> Smart
                             Living, Made Simple</span>
                     </div>
-                    <h1 class="text-2xl sm:text-5xl font-bold text-[#0F172A] mt-5 font-main mb-5">Make Your Home
+                    <h1 class="text-2xl sm:text-5xl/[50px] font-bold text-[#0F172A] mt-5 font-main mb-5">Make Your Home
                         <br class="hidden sm:block"> Smarter, Safer &
                         <br class="hidden sm:block"><span
                             class="bg-gradient-to-r from-gradientStart to-gradientEnd bg-clip-text text-transparent">
@@ -160,7 +160,7 @@
             </div>
         </div>
     </div>
-    </div>
+    
 
 
     <!-- feature section -->
@@ -652,7 +652,7 @@
                                  <textarea rows="6" class="w-full border rounded-xl p-2 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300" type="text" placeholder="Write Your Message Here"></textarea>
                             </div>
                             <div class="send-btn mt-8">
-                                <button class="bg-gradient-to-r from-gradientStart to-gradientEnd  py-3 rounded-xl w-full text-white font-medium transition-all duration-300 ease hover:-translate-y-1 hover:shadow-xl"><i class="fa-solid fa-paper-plane me-3 "></i>Send Message</button>
+                                <button class="bg-gradient-to-r from-gradientStart to-gradientEnd  py-3 rounded-xl w-full text-white font-medium transition-all duration-300 ease  hover:shadow-xl"><i class="fa-solid fa-paper-plane me-3 "></i>Send Message</button>
 
                             </div>
                             </div>
@@ -700,7 +700,7 @@
                    <ul class="">
                     <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Home</a></li>
                     <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Feature</a></li>
-                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Showcase</a></li>
+                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Solutions</a></li>
                     <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Priceing</a></li>
                     <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Contact Us</a></li>
                    </ul>
@@ -720,8 +720,10 @@
                    <h5 class="text-white font-medium uppercase mb-3">Stay Updated</h5>
                    <p class="text-gray-400 mb-8">Subscribe to our newsletter and get the latest updates, smart homes tips and exclusive offers.
                    </p>
-                   <div class="subscribe border border-gray-600 rounded-full flex overflow-hidden hover:border-primary shadow-xl">
-                        <div class="detail-part w-4/5 px-2 py-2 text-gray-400 flex items-center gap-2"><i class="fa-regular fa-envelope text=text-gray-400 text-lg"></i> Enter Your Email</div>
+                   <div class="subscribe border border-gray-600 rounded-full flex overflow-hidden hover:border-primary shadow-xl relative">
+                        <!-- <div class="detail-part w-4/5 px-2 py-2 text-gray-400 flex items-center gap-2"><i class="fa-regular fa-envelope text=text-gray-400 text-lg"></i> Enter Your Email</div> -->
+                         <i class="fa-regular fa-envelope text-gray-400 text-md absolute left-3 top-1/2 -translate-y-1/2 mt-[2px]"></i>
+                        <input type="email" placeholder="enter your email"  class="pl-10 bg-transparent py-2 w-4/5 flex items-center text-gray-400">
                         <div class="detail-part bg-gradient-to-r from-gradientStart to-gradientEnd w-1/5 px-4 py-2 flex justify-center items-center transition-all duration-300 ease group"><i class="fa-regular fa-paper-plane text-white text-md group-hover:scale-110"></i>
                         </div>
                    </div>
