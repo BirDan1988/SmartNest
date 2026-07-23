@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
         rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -41,18 +43,20 @@
         }
     </script>
 </head>
+
 <body>
 
-     <div class="w-full sticky top-0 z-50 bg-white shadow-lg rounded-xl">
+    <div class="w-full sticky top-0 z-50 bg-white shadow-lg rounded-xl">
         <div class="container mx-auto px-4  flex items-center py-4 justify-between  relative">
             <div class="logo flex items-end">
                 <img class="w-10 h-10 mr-1" src="images/logo.png">
-                <h2 class="text-3xl leading-none font-bold text-heading text-main">Smart<span class="text-[#06B6D4]">Nest</span></h2>
+                <h2 class="text-3xl leading-none font-bold text-heading text-main">Smart<span
+                        class="text-[#06B6D4]">Nest</span></h2>
             </div>
             <div class="navmenu hidden lg:block">
                 <ul class="list-none flex items-center gap-5">
-                    <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a href="index.html" class="decoration-none px-4 py-2"
-                            >Home</a></li>
+                    <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a href="index.html"
+                            class="decoration-none px-4 py-2">Home</a></li>
                     <li class="text-md text-[#64748B] hover:text-[#5B5FEF]  font-medium"><a
                             class="decoration-none px-4 py-2" href="features.html">Features</a></li>
                     <li class="text-md text-[#5B5FEF]  hover:text-[#5B5FEF] font-medium"><a
@@ -72,21 +76,22 @@
                 </div>
                 <div onclick="toggle()" class="toggle-mobile text-2xl  block lg:hidden px-3 "><i
                         class="fa-solid fa-bars text-heading flex items-center bg-gradient-to-r from-gradientStart to-gradientEnd bg-clip-text text-transparent"></i>
-                    </div>
-                    <div id="toggle" class="mobile-menu absolute top-full left-0 w-full h-0 bg-white rounded-lg transition-all duration-300 ease overflow-hidden">
-                        <ul>
-                            <li class="text-md text-[#5B5FEF] font-medium"><a class="decoration-none px-4 py-2 block"
-                            href="index.html">Home</a></li>
-                    <li class="text-md text-[#64748B] hover:text-[#5B5FEF]  font-medium"><a
-                            class="decoration-none px-4 py-2 block" href="features.html">Features</a></li>
-                    <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
-                            class="decoration-none px-4 py-2 block" href="#">Showcase</a></li>
-                    <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
-                            class="decoration-none px-4 py-2 block" href="#">Pricing</a></li>
-                    <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
-                            class="decoration-none px-4 py-2 block" href="#">Contact</a></li>
-                        </ul>
-                    </div>
+                </div>
+                <div id="toggle"
+                    class="mobile-menu absolute top-full left-0 w-full h-0 bg-white rounded-lg transition-all duration-300 ease overflow-hidden">
+                    <ul>
+                        <li class="text-md text-[#5B5FEF] font-medium"><a class="decoration-none px-4 py-2 block"
+                                href="index.html">Home</a></li>
+                        <li class="text-md text-[#64748B] hover:text-[#5B5FEF]  font-medium"><a
+                                class="decoration-none px-4 py-2 block" href="features.html">Features</a></li>
+                        <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
+                                class="decoration-none px-4 py-2 block" href="#">Showcase</a></li>
+                        <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
+                                class="decoration-none px-4 py-2 block" href="#">Pricing</a></li>
+                        <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
+                                class="decoration-none px-4 py-2 block" href="#">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -96,15 +101,20 @@
         <div class="container mx-auto px-4 ">
             <div class="grid grid-cols-12 items-center gap-4">
                 <div class="hero-content order-2 lg:order-1 PX-3 py-5 col-span-12 lg:col-span-5">
-                  
-                    <h1 class="text-3xl sm:text-5xl/[60px]  font-bold text-[#0F172A] mt-5 font-main mb-5">
-                     Smart<span class="bg-gradient-to-r from-gradientStart to-gradientEnd bg-clip-text text-transparent">
+                    <div
+                        class="badge px-4 py-1 rounded-2xl bg-gradient-to-r from-gradientStart/20 to-gradientEnd/20 inline-block ">
+                        <span class=" text-sm  text-[#5B5FEF] font-bold uppercase">Solutions</span>
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl/[60px]  font-bold text-[#0F172A] mt-2 font-main mb-5">
+                        Smart<span
+                            class="bg-gradient-to-r from-gradientStart to-gradientEnd bg-clip-text text-transparent">
                             solutions</span>
-                        
+
                         <br class="hidden md:block">for every lifestyle
                     </h1>
-                    <p class="text-gray-500 text-lg font-medium mb-5 text-justify">Discover intelligent automation tailored for
-                        homes, apartmants, offices, villas, and 
+                    <p class="text-gray-500 text-lg font-medium mb-5 text-justify">Discover intelligent automation
+                        tailored for
+                        homes, apartmants, offices, villas, and
                         rental properties. Smart living made simple.
                     </p>
                     <div class="buttons flex items-center gap-4">
@@ -115,7 +125,7 @@
                                 href="#">Contact Us <i class="fa-solid fa-arrow-right mr-2 text-primary ml-2"></i></a>
                         </div>
                     </div>
-                    
+
 
                 </div>
                 <div class="hero-image order-1 lg:order-2 flex items-center mt-8 col-span-12 lg:col-span-7">
@@ -125,7 +135,472 @@
             </div>
         </div>
     </div>
-    
-    
+
+
+    <!-- solutions -->
+
+    <div class="container mx-auto px-3 mt-10">
+        <div class="title text-center mb-10">
+            <h2 class="font-semibold text-2xl font-main mb-2">Solutions for Every Space</h2>
+            <p class="text-gray-500 font-medium text-sm ">Find the perfect smart automation solution that fits your
+                space and life style.</p>
+        </div>
+
+        <!-- card-section -->
+
+        <div class="cards-solutions">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                <div
+                    class="card border rounded-2xl overflow-hidden group transition-all duration-300 ease hover:-translate-y-1 hover:shadow-lg ">
+                    <div class="card-image w-full  relative overflow-hidden">
+                        <img class="block object-cover w-full h-full transition-all duration-300 ease group-hover:scale-[1.1]"
+                            src="images/image-8.png">
+
+                    </div>
+                    <div class="content py-5 px-8 relative">
+                        <div
+                            class="absolute top-[-20px] left-[20px] icon items-center justify-center bg-primary size-[40px] sm:size-[50px] rounded-full flex outline outline-4 sm:outline-4 sm:outline-8 outline-white mb-3 transition-all duration-300 ease ">
+                            <i class="fa-solid fa-house text-white font-bold text-md sm:text-2xl "></i>
+                        </div>
+                        <h4 class="text-lg font-main font-semibold mb-2 text-center ">Smart Home</h4>
+                        <p class="text-gray-500 text-md font-medium mb-3 text-justify">Automate lighting, security,
+                            cliamte and appliances for a safer, more comfortable home.</p>
+                        <a href="#" class="text-primary font-semibold text-md group/link  ">Explore <i
+                                class="fa-solid fa-arrow-right ml-1 group-hover/link:translate-x-1 transition-all duration-300 ease"></i></a>
+                    </div>
+
+                </div>
+
+                <div
+                    class="card border rounded-2xl overflow-hidden group transition-all duration-300 ease hover:-translate-y-1 hover:shadow-lg ">
+                    <div class="card-image w-full  relative overflow-hidden">
+                        <img class="block object-cover w-full h-full transition-all duration-300 ease group-hover:scale-[1.1]"
+                            src="images/image-8.png">
+
+                    </div>
+                    <div class="content py-5 px-8 relative">
+                        <div
+                            class="absolute top-[-20px] left-[20px] icon items-center justify-center bg-[#10B981] size-[40px] sm:size-[50px]  rounded-full flex outline outline-4 sm:outline-8 outline-white mb-3 transition-all duration-300 ease ">
+                            <i class="fa-solid fa-building text-white font-bold text-md sm:text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-main font-semibold mb-2 text-center ">Smart Appartment</h4>
+                        <p class="text-gray-500 text-md font-medium mb-3 text-justify">Compact and affordable automation
+                            solution for modern appartment living style to make life easy.</p>
+                        <a href="#" class="text-[#10B981] font-semibold text-md group/link  ">Explore <i
+                                class="fa-solid fa-arrow-right ml-1 group-hover/link:translate-x-1 transition-all duration-300 ease"></i></a>
+                    </div>
+
+                </div>
+
+                <div
+                    class="card border rounded-2xl overflow-hidden group transition-all duration-300 ease hover:-translate-y-1 hover:shadow-lg ">
+                    <div class="card-image w-full  relative overflow-hidden">
+                        <img class="block object-cover w-full h-full transition-all duration-300 ease group-hover:scale-[1.1]"
+                            src="images/image-8.png">
+
+                    </div>
+                    <div class="content py-5 px-8 relative">
+                        <div
+                            class="absolute top-[-20px] left-[20px] icon items-center justify-center bg-primary size-[40px] sm:size-[50px]  rounded-full flex outline outline-4 sm:outline-8 outline-white mb-3 transition-all duration-300 ease ">
+                            <i class="fa-solid fa-briefcase text-white font-bold text-md sm:text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-main font-semibold mb-2 text-center ">Smart office</h4>
+                        <p class="text-gray-500 text-md font-medium mb-3 text-justify">Improve productivity with smart
+                            lighting, access control, and energy manangment system.</p>
+                        <a href="#" class="text-primary font-semibold text-md group/link  ">Explore <i
+                                class="fa-solid fa-arrow-right ml-1 group-hover/link:translate-x-1 transition-all duration-300 ease"></i></a>
+                    </div>
+
+                </div>
+
+                <div
+                    class="card border rounded-2xl overflow-hidden group transition-all duration-300 ease hover:-translate-y-1 hover:shadow-lg ">
+                    <div class="card-image w-full  relative overflow-hidden">
+                        <img class="block object-cover w-full h-full transition-all duration-300 ease group-hover:scale-[1.1]"
+                            src="images/image-8.png">
+
+                    </div>
+                    <div class="content py-5 px-8 relative">
+                        <div
+                            class="absolute top-[-20px] left-[20px] icon items-center justify-center bg-[#10B981] size-[40px] sm:size-[50px]  rounded-full flex outline outline-4 sm:outline-8 outline-white mb-3 transition-all duration-300 ease ">
+                            <i class="fa-solid fa-crown text-white font-bold text-md sm:text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-main font-semibold mb-2 text-center ">Luxury Villa</h4>
+                        <p class="text-gray-500 text-md font-medium mb-3 text-justify">Advance security, smart gates and
+                            premium automation for luxrious villas to enjoy premium living style.</p>
+                        <a href="#" class="text-[#10B981] font-semibold text-md group/link  ">Explore <i
+                                class="fa-solid fa-arrow-right ml-1 group-hover/link:translate-x-1 transition-all duration-300 ease"></i></a>
+                    </div>
+
+                </div>
+
+                <div
+                    class="card border rounded-2xl overflow-hidden group transition-all duration-300 ease hover:-translate-y-1 hover:shadow-lg ">
+                    <div class="card-image w-full  relative overflow-hidden">
+                        <img class="block object-cover w-full h-full transition-all duration-300 ease group-hover:scale-[1.1]"
+                            src="images/image-8.png">
+
+                    </div>
+                    <div class="content py-5 px-8 relative">
+                        <div
+                            class="absolute top-[-20px] left-[20px] icon items-center justify-center bg-primary size-[40px] sm:size-[50px]  rounded-full flex outline outline-4 sm:outline-8 outline-white mb-3 transition-all duration-300 ease ">
+                            <i class="fa-solid fa-suitcase-rolling text-white font-bold text-md sm:text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-main font-semibold mb-2 text-center ">Vacation Rental</h4>
+                        <p class="text-gray-500 text-md font-medium mb-3 text-justify">Smart locks, remote access, and
+                            guest manangment for stress free hostings from anywhere in quick time..</p>
+                        <a href="#" class="text-primary font-semibold text-md group/link  ">Explore <i
+                                class="fa-solid fa-arrow-right ml-1 group-hover/link:translate-x-1 transition-all duration-300 ease"></i></a>
+                    </div>
+
+                </div>
+
+                <div
+                    class="card border rounded-2xl overflow-hidden group transition-all duration-300 ease hover:-translate-y-1 hover:shadow-lg ">
+                    <div class="card-image w-full  relative overflow-hidden">
+                        <img class="block object-cover w-full h-full transition-all duration-300 ease group-hover:scale-[1.1]"
+                            src="images/image-8.png">
+
+                    </div>
+                    <div class="content py-5 px-8 relative">
+                        <div
+                            class="absolute top-[-20px] left-[20px] icon items-center justify-center bg-[#10B981] size-[40px] sm:size-[50px]  rounded-full flex outline outline-4 sm:outline-8 outline-white mb-3 transition-all duration-300 ease ">
+                            <i class="fa-solid fa-crown text-white font-bold text-md sm:text-2xl"></i>
+                        </div>
+                        <h4 class="text-lg font-main font-semibold mb-2 text-center ">Retail Store</h4>
+                        <p class="text-gray-500 text-md font-medium mb-3 text-justify">Smart monitoring, energy
+                            efficient lighting, and high security for your business with our devices.</p>
+                        <a href="#" class="text-[#10B981] font-semibold text-md group/link  ">Explore <i
+                                class="fa-solid fa-arrow-right ml-1 group-hover/link:translate-x-1 transition-all duration-300 ease"></i></a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- how smartness work? -->
+    <div class="container mx-auto px-3 mt-20">
+        <h2 class="text-2xl font-semibold font-main text-center mb-10">How Smart Nest Work</h2>
+        <div class="process-cards">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-7">
+                <div class="process border rounded-2xl shadow-lg relative py-3 px-6 ">
+                    <span
+                        class="size-10 bg-primary text-white text-xl font-bold inline-flex justify-center items-center rounded-full absolute left-4 top-4">1</span>
+                    <p class="flex justify-center mt-3"><i
+                            class="fa-solid fa-qrcode  mt-5 text-5xl sm:text-6xl text-primary"></i></p>
+                    <h3 class="text-lg font-main font-semibold text-center mt-4">Choose Soluition</h3>
+                    <p class="text-md text-gray-500 font-medium text-center mt-1">Pick the best solutions which fits
+                        your space and needs.</p>
+                </div>
+                <div class="process border rounded-2xl shadow-lg relative py-3 px-6">
+                    <span
+                        class="size-10 bg-[#10B981] text-white text-xl font-semibold inline-flex justify-center items-center rounded-full absolute left-4 top-4">2</span>
+                    <p class="flex justify-center mt-3">
+                        <i class="ri-webcam-fill text-5xl sm:text-6xl text-[#10B981] mt-5"></i>
+                    </p>
+                    <h3 class="text-lg font-main font-semibold text-center mt-4">Install Devices</h3>
+                    <p class="text-md text-gray-500 font-medium text-center mt-1">Our Experts install and setup smart
+                        devices.</p>
+                </div>
+                <div class="process border rounded-2xl shadow-lg relative py-3 px-6 ">
+                    <span
+                        class="size-10 bg-primary text-white text-xl font-semibold inline-flex justify-center items-center rounded-full absolute left-4 top-4">3</span>
+                    <p class="flex justify-center mt-3"><i
+                            class="fa-solid fa-tower-broadcast  mt-5 text-5xl sm:text-6xl text-primary"></i></p>
+                    <h3 class="text-lg font-main font-semibold text-center mt-4">Connect App</h3>
+                    <p class="text-md text-gray-500 font-medium text-center mt-1">Connect everything into SmartNest app
+                        within a miniute.</p>
+                </div>
+                <div class="process border rounded-2xl shadow-lg relative py-3 px-6">
+                    <span
+                        class="size-10 bg-[#10B981] text-white text-xl font-semibold inline-flex justify-center items-center rounded-full absolute left-4 top-4">4</span>
+                    <p class="flex justify-center mt-3"><i
+                            class="ri-home-wifi-fill  text-5xl sm:text-6xl text-[#10B981] mt-5"></i>
+                    </p>
+                    <h3 class="text-lg font-main font-semibold text-center mt-4">Enjoy Smart Living</h3>
+                    <p class="text-md text-gray-500 font-medium text-center mt-1">COntrol, automate and monitor your
+                        space from everywhere.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- why choose smartNest -->
+        <div class="whychoose mt-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 items-center">
+                <div class="img w-full h-[300px]">
+                    <img class="w-full h-full block object-contain" src="images/image-1.png">
+                </div>
+                <div class="content">
+                    <span class="text-lg font-medium">Why Choose SmartNest?</span>
+
+                    <h2 class="font-semibold text-2xl font-main my-2">Smart Living, Better Life</h2>
+                    <p class="text-gray-500 font-medium text-md ">SmartNest brings convencience, security and efficiency
+                        to your fingertips to makes your life easy, simple and easy access..</p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 mt-10">
+                        <div class="points">
+                            <p class="text-xl font-medium text-gray-600 mb-4"><i
+                                    class="fa-solid fa-circle-check text-primary mr-3"></i>Energy Saving</p>
+                            <p class="text-xl font-medium text-gray-600 mb-4"><i
+                                    class="fa-solid fa-circle-check text-primary mr-3"></i>Smart Security</p>
+                            <p class="text-xl font-medium text-gray-600 mb-4"><i
+                                    class="fa-solid fa-circle-check text-primary mr-3"></i>Voice Control</p>
+                        </div>
+                        <div class="points">
+                            <p class="text-xl font-medium text-gray-600 mb-4"><i
+                                    class="fa-solid fa-circle-check text-primary mr-3"></i>Remote Access</p>
+                            <p class="text-xl font-medium text-gray-600 mb-4"><i
+                                    class="fa-solid fa-circle-check text-primary mr-3"></i>Easy Installation</p>
+                            <p class="text-xl font-medium text-gray-600 mb-4"><i
+                                    class="fa-solid fa-circle-check text-primary mr-3"></i>Real-time Alerts</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- company-stats -->
+
+        <div class="company-stats mt-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div
+                    class="stats rounded-2xl border shadow-lg p-4 flex gap-2 transition-all duration-300 ease hover:-translate-y-1 shadow-2xl group">
+                    <div
+                        class="icon size-[50px] rounded-full bg-primary flex shrink-0 justify-center items-center transition-all duration-300 ease group-hover:scale-[1.1]">
+                        <i class="fa-solid fa-user-group text-xl text-white"></i>
+                    </div>
+                    <div class="stats-info">
+                        <span class="font-main font-semibold text-3xl">100K+</span>
+                        <h6 class="text-gray-700 text-lg font-semibold mb-2">Active Devices</h6>
+                        <p class="text-gray-500 font-medium text-md">Trusted by thousands of happy customers.</p>
+                    </div>
+                </div>
+                <div
+                    class="stats rounded-2xl border shadow-lg p-4 flex gap-2 transition-all duration-300 ease hover:-translate-y-1 shadow-2xl group">
+                    <div
+                        class="icon size-[50px] rounded-full bg-[#10B981] flex shrink-0 justify-center items-center transition-all duration-300 ease group-hover:scale-[1.1]">
+                        <i class="fa-solid fa-puzzle-piece text-xl text-white"></i>
+                    </div>
+                    <div class="stats-info">
+                        <span class="font-main font-semibold text-3xl">25+</span>
+                        <h6 class="text-gray-700 text-lg font-semibold mb-2">Intergrations</h6>
+                        <p class="text-gray-500 font-medium text-md">Seamlessly work with top smart plateforms.</p>
+                    </div>
+                </div>
+                <div
+                    class="stats rounded-2xl border shadow-lg p-4 flex gap-2 transition-all duration-300 ease hover:-translate-y-1 shadow-2xl group">
+                    <div
+                        class="icon size-[50px] rounded-full bg-primary flex shrink-0 justify-center items-center transition-all duration-300 ease group-hover:scale-[1.1]">
+                        <i class="ri-shield-check-fill text-xl text-white"></i>
+                    </div>
+                    <div class="stats-info">
+                        <span class="font-main font-semibold text-3xl">99.9%</span>
+                        <h6 class="text-gray-700 text-lg font-semibold mb-2">System Uptime</h6>
+                        <p class="text-gray-500 font-medium text-md">Realiable and secure all the time.</p>
+                    </div>
+                </div>
+                <div
+                    class="stats rounded-2xl border shadow-lg p-4 flex gap-2 transition-all duration-300 ease hover:-translate-y-1 shadow-2xl group">
+                    <div
+                        class="icon size-[50px] rounded-full bg-[#10B981] flex shrink-0 justify-center items-center transition-all duration-300 ease group-hover:scale-[1.1]">
+                        <i class="ri-leaf-fill text-xl text-white"></i>
+                    </div>
+                    <div class="stats-info">
+                        <span class="font-main font-semibold text-3xl">30%</span>
+                        <h6 class="text-gray-700 text-lg font-semibold mb-2">Average Eerngy Saving</h6>
+                        <p class="text-gray-500 font-medium text-md">Reduce energy-bill with smart automation.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- cta section -->
+    <div class="w-ful bg-gradient-to-r from-gradientStart to-gradientEnd">
+        <div class="container mx-auto px-3 mt-5 relative group z-10">
+            <div class="cta  p-4 block lg:flex justify-between items-center rounded-2xl">
+                <div class="info block sm:flex  items-center gap-5">
+                    <div class="div flex justify-center sm:start mb-2">
+                        <div class="cta-icon relative flex group transition-all duration-300 ease">
+                            <i class="fa-regular fa-house text-white/50 text-8xl relative"></i>
+                            <i
+                                class="fa-solid fa-wifi fa-canvas-square text-white absolute top-6 left-12 text-xl group-hover:text-[#10B981]"></i>
+                        </div>
+                    </div>
+                    <div class="cta-text text-center sm:text-start">
+                        <img class="h-full right-0 top-0 absolute opacity-20 -z-10 hidden sm:block "
+                            src="images/image-5.png">
+                        <h3 class="text-white text-2xl font-bold font-sens mb-1">Ready to Transform
+                            <br class="hidden lg:block">Your Home?
+                        </h3>
+                        <p class="text-white ">Join thousands of happy SmartNest users
+                            <br class="hidden lg:block"> and start your smart living journey today.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="cta-btn mt-6 lg:mt-0">
+                    <div class="btn flex sm:flex-row flex-col  items-center ">
+                        <button
+                            class="btn-primary  text-primary px-8 py-3 bg-white rounded-full font-semibold text-md hover:text-white transition-all duration-300 ease hover:bg-primary hover:shadow-lg mr-0 sm:mr-5 mb-3  sm:mb-0 ">Get
+                            Started Now</button>
+                        <button
+                            class="btn-secondary text-white px-8 py-3 bg-transparent rounded-full font-semibold text-md border border-white transition-all duration-300 ease hover:border-primary hover:text-primary hover:shadow-lg">Contact
+                            Us</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full bg-[#0F172A] py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2  lg:grid-cols-4 gap-5">
+                <div class="box-1 col-span-2 lg:col-span-1">
+                    <div class="logo flex mb-4">
+                        <img class="size-9 mr-1" src="images/Icon-2.png">
+                        <h2 class="text-3xl font-bold text-heading font-main text-white mt-2">Smart<span
+                                class="text-[#06B6D4]">Nest</span></h2>
+                    </div>
+                    <p class="text-white mb-4">Making homes smarter,safer
+                        <br> and more connected through
+                        <br>intelligent automation.
+                    </p>
+                    <div class="social-icons flex gap-3">
+                        <div
+                            class="icons size-12 rounded-full border-2 border-white/20 flex items-center justify-center hover:border-primary">
+                            <i class="fa-brands fa-square-facebook text-white text-2xl"></i>
+                        </div>
+                        <div
+                            class="icons size-12 rounded-full border-2 border-white/20 flex items-center justify-center hover:border-primary">
+                            <i class="fa-brands fa-square-instagram text-white text-2xl"></i>
+                        </div>
+                        <div
+                            class="icons size-12 rounded-full border-2 border-white/20 flex items-center justify-center hover:border-primary">
+                            <i class="fa-brands fa-square-twitter text-white text-2xl"></i>
+                        </div>
+                        <div
+                            class="icons size-12 rounded-full border-2 border-white/20 flex items-center justify-center hover:border-primary">
+                            <i class="fa-brands fa-square-linkedin text-white text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-2">
+                    <h5 class="text-white font-medium uppercase mb-3">Company</h5>
+                    <ul class="">
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="index.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Home</a>
+                        </li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="features.html"><i
+                                    class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Feature</a></li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Solutions</a></li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Priceing</a></li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="box-3">
+                    <h5 class="text-white font-medium uppercase mb-3">Resources</h5>
+                    <ul class="">
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Blog</a></li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Help Center</a>
+                        </li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Installation
+                                Guide</a></li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Privacy Policy</a>
+                        </li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Terms &
+                                Condition</a></li>
+                    </ul>
+                </div>
+
+                <div class="box-4 col-span-2 lg:col-span-1">
+                    <h5 class="text-white font-medium uppercase mb-3">Stay Updated</h5>
+                    <p class="text-gray-400 mb-8">Subscribe to our newsletter and get the latest updates, smart homes
+                        tips and exclusive offers.
+                    </p>
+                    <div
+                        class="subscribe border border-gray-600 rounded-full flex overflow-hidden hover:border-primary shadow-xl relative">
+                        <!-- <div class="detail-part w-4/5 px-2 py-2 text-gray-400 flex items-center gap-2"><i class="fa-regular fa-envelope text=text-gray-400 text-lg"></i> Enter Your Email</div> -->
+                        <i
+                            class="fa-regular fa-envelope text-gray-400 text-md absolute left-3 top-1/2 -translate-y-1/2 mt-[2px]"></i>
+                        <input type="email" placeholder="enter your email"
+                            class="pl-10 bg-transparent py-2 w-4/5 flex items-center text-gray-400">
+                        <div
+                            class="detail-part bg-gradient-to-r from-gradientStart to-gradientEnd w-1/5 px-4 py-2 flex justify-center items-center transition-all duration-300 ease group">
+                            <i class="fa-regular fa-paper-plane text-white text-md group-hover:scale-110"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 flex items-center gap-4 mt-8"><i
+                            class="fa-solid fa-house-circle-check text-accent text-md"></i> No spam. Unsubscribe
+                        anytime.</p>
+
+                </div>
+            </div>
+            <div class="container mx-auto px-4 mt-5 border-t border-gray-600">
+                <div class="copyright lg:flex items-center justify-between py-10 block">
+                    <p class="text-gray-400 mb-4">© 2026 <span class="text-accent font-medium">SmartNest.</span> All
+                        Rights Reserved.</p>
+                    <div class="policy mb-4">
+                        <ul class="block sm:flex ">
+                            <li><a class=" pr-4 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent border-r-0 sm:border-r border-gray-600 "
+                                    href="#"></i>Privacy Policy</a></li>
+                            <li><a class=" px-0 sm:px-4 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent border-r-0 sm:border-r border-gray-600"
+                                    href="#"></i>Terms of service</a></li>
+                            <li><a class=" pl-0 sm:pl-4 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent "
+                                    href="#"></i>Cokkies</a></li>
+                        </ul>
+                    </div>
+                    <div class="tag mb-4">
+                        <p class="text-gray-400"><i
+                                class="fa-regular fa-heart text-primary font-medium mr-3 text-lg"></i>Designed by <span
+                                class="text-accent font-medium">Birju Danak</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let i = document.getElementById('toggle-feature')
+        function toggle() {
+            if (i.style.height === '320px') {
+                i.style.height = '0'
+            }
+            else {
+                i.style.height = '320px'
+            }
+
+        }
+
+
+
+    </script>
+
+
+
+
 </body>
+
 </html>
