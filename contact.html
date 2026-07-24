@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#5B5FEF",
+                        secondary: "#10B981",
+                        accent: "#38BDF8",
+
+                        gradientStart: "#5B5FEF",
+                        gradientEnd: "#10B981",
+
+                        background: "#F8FAFC",
+                        paragraph: "#64748B",
+
+                        btnPrimary: "#2563EB",
+                        btnHover: "#48EBFA",
+
+                        heading: "#0F172A",
+                        cardBg: "#3D293B"
+                    },
+
+                    fontFamily: {
+                        main: ["Poppins", "sans-serif"],
+                        body: ["Inter", "sans-serif"]
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+<div class="w-full sticky top-0 z-50 bg-white shadow-lg rounded-xl">
+        <div class="container mx-auto px-4  flex items-center py-4 justify-between  relative">
+            <div class="logo flex items-end">
+                <img class="w-10 h-10 mr-1" src="images/logo.png">
+                <h2 class="text-3xl leading-none font-bold text-heading text-main">Smart<span
+                        class="text-[#06B6D4]">Nest</span></h2>
+            </div>
+            <div class="navmenu hidden lg:block">
+                <ul class="list-none flex items-center gap-5">
+                    <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a href="index.html"
+                            class="decoration-none px-4 py-2">Home</a></li>
+                    <li class="text-md text-[#64748B] hover:text-[#5B5FEF]  font-medium"><a
+                            class="decoration-none px-4 py-2" href="features.html">Features</a></li>
+                    <li class="text-md  text-[#64748B]  hover:text-[#5B5FEF] font-medium"><a
+                            class="decoration-none px-4 py-2" href="solutions.html">Solutions</a></li>
+                    <li class="text-md  text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
+                            class="decoration-none px-4 py-2" href="pricing.html">Pricing</a></li>
+                    <li class="text-md text-[#5B5FEF]  font-medium"><a
+                            class="decoration-none px-4 py-2" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="buttons flex items-center gap-4">
+                <div class=" flex gap-4 items-center">
+                    <a class="md:inline-block hidden text-md px-3 py-2  text-[#0F172A] hover:text-primary  hover:bg-gray-100 transition-all duration-300 rounded-lg"
+                        href="#">Log In</a>
+                    <a class=" md:inline-block hidden bg-gradient-to-r from-gradientStart to-gradientEnd text-md px-3 py-2 rounded-xl text-white shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease"
+                        href="#">Get Started</a>
+                </div>
+                <div onclick="toggle()" class="toggle-mobile text-2xl  block lg:hidden px-3 "><i
+                        class="fa-solid fa-bars text-heading flex items-center bg-gradient-to-r from-gradientStart to-gradientEnd bg-clip-text text-transparent"></i>
+                </div>
+                <div id="toggle"
+                    class="mobile-menu absolute top-full left-0 w-full h-0 bg-white rounded-lg transition-all duration-300 ease overflow-hidden">
+                    <ul>
+                        <li class="text-md text-[#5B5FEF] hover:text-[#5B5FEF] font-medium"><a class="decoration-none px-4 py-2 block"
+                                href="index.html">Home</a></li>
+                        <li class="text-md text-[#64748B] hover:text-[#5B5FEF]  font-medium"><a
+                                class="decoration-none px-4 py-2 block" href="features.html">Features</a></li>
+                        <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
+                                class="decoration-none px-4 py-2 block" href="solutions.html">Solutions</a></li>
+                        <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
+                                class="decoration-none px-4 py-2 block" href="pricing.html">Pricing</a></li>
+                        <li class="text-md text-[#5B5FEF] font-medium"><a
+                                class="decoration-none px-4 py-2 block" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- hero-part -->
+    <div class="w-full">
+        <div class="container mx-auto px-4 ">
+            <div class="grid grid-cols-12 items-center gap-4">
+                <div class="hero-content order-2 lg:order-1 PX-3 py-5 col-span-12 lg:col-span-5">
+                    <div
+                        class="badge px-4 py-1 rounded-2xl bg-gradient-to-r from-gradientStart/20 to-gradientEnd/20 inline-block ">
+                        <span class=" text-sm  text-[#5B5FEF] font-bold uppercase">Contact Us</span>
+                    </div>
+                    <h1 class="text-3xl sm:text-5xl/[60px]  font-bold text-[#0F172A] mt-2 font-main mb-5">
+                       Let's Build your
+
+                        <!-- <br class="hidden md:block"> -->
+                        <span
+                            class="bg-gradient-to-r from-gradientStart to-gradientEnd bg-clip-text text-transparent">Smart Home</span> together
+                    </h1>
+                    <p class="text-gray-500 text-lg font-medium mb-5 text-justify">Have questions about SmartNest? Whatever you're palnning a smart home, upgrading your apartment, or need a business solutions, we're here to help. 
+                    <div class="buttons flex items-center gap-4">
+                        <div class="flex-column sm:flex gap-4 items-center">
+                            <a class="block font-medium bg-gradient-to-r from-gradientStart to-gradientEnd text-md px-5 py-3 rounded-xl text-white shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease"
+                                href="#">Contact Sales<i class="fa-solid fa-arrow-right ml-2"></i></a>
+                            <a class="block text-md px-5 py-3 mt-3 sm:mt-0  text-[#0F172A] hover:text-primary border font-medium  hover:border-primary transition-all duration-300 rounded-xl hover:shadow-lg"
+                                href="#">Book Demo<i class="fa-regular fa-calendar-days mr-2 ml-2 text-lg"></i></a>
+                        </div>
+                    </div>      
+
+                </div>
+                <div class="hero-image order-1 lg:order-2 flex items-center mt-8 col-span-12 lg:col-span-7">
+                    <img class="w-full block object-contain h-full" src="images/image-11.png">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- why us -->
+
+    <div class="container mx-auto px-3 mt-10">
+        <div class="title">
+           <h2 class="text-2xl font-main text-center font-semibold"> Why Contact SmartNest?</h2> 
+        </div>
+ <div class="company-stats mt-8">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div
+                    class="stats rounded-2xl border shadow-lg p-4 flex gap-5 transition-all duration-300 ease hover:-translate-y-1 shadow-2xl group">
+                    <div
+                        class="icon size-[50px] rounded-full bg-primary flex shrink-0 justify-center items-center transition-all duration-300 ease group-hover:scale-[1.1]">
+                        <i class="fa-solid fa-comment-dots text-xl text-white "></i>
+                       
+                    </div>
+                    <div class="stats-info">
+                        <h6 class="font-main text-lg font-semibold mb-2">Fast Response</h6>
+                        <p class="text-gray-500 font-medium text-md">We usually reply
+                            <br> withing 24 hours.</p>
+                    </div>
+                </div>
+                <div
+                    class="stats rounded-2xl border shadow-lg p-4 flex gap-5 transition-all duration-300 ease hover:-translate-y-1 shadow-2xl group">
+                    <div
+                        class="icon size-[50px] rounded-full bg-[#10B981] flex shrink-0 justify-center items-center transition-all duration-300 ease group-hover:scale-[1.1]">
+                        
+                         <i class="ri-shield-star-fill text-2xl text-white"></i>
+                    </div>
+                    <div class="stats-info">
+                        
+                        <h6 class="font-main text-lg font-semibold mb-2">Proffesional Guidance</h6>
+                        <p class="text-gray-500 font-medium text-md">Our Experts help you choose
+                            <br> the right plan.</p>
+                    </div>
+                </div>
+                <div
+                    class="stats rounded-2xl border shadow-lg p-4 flex gap-5 transition-all duration-300 ease hover:-translate-y-1 shadow-2xl group">
+                    <div
+                        class="icon size-[50px] rounded-full bg-sky-500 flex shrink-0 justify-center items-center transition-all duration-300 ease group-hover:scale-[1.1]">
+                        <i class="fa-solid fa-headset text-2xl text-white"></i>
+                    </div>
+                    <div class="stats-info">
+                        
+                        <h6 class="font-main text-lg font-semibold mb-2">Free Consultation</h6>
+                        <p class="text-gray-500 font-medium text-md">Get free adivce and Consultation
+                            <br>before you decide.
+                        </p>
+                    </div>
+                </div>
+                <!-- <div
+                    class="stats rounded-2xl border shadow-lg p-4 flex gap-2 transition-all duration-300 ease hover:-translate-y-1 shadow-2xl group">
+                    <div
+                        class="icon size-[50px] rounded-full bg-[#10B981] flex shrink-0 justify-center items-center transition-all duration-300 ease group-hover:scale-[1.1]">
+                        <i class="ri-leaf-fill text-xl text-white"></i>
+                    </div>
+                    <div class="stats-info">
+                        <span class="font-main font-semibold text-3xl">30%</span>
+                        <h6 class="text-gray-700 text-lg font-semibold mb-2">Average Eerngy Saving</h6>
+                        <p class="text-gray-500 font-medium text-md">Reduce energy-bill with smart automation.</p>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- .contact-form -->
+ <div class="container mx-auto px-3 mt-14">
+   <div class="grid grid-cols-12 gap-5  ">
+              
+                <div class="col-span-12 lg:col-span-6 order-2 lg:order-1">
+                    <div class="contact-form bg-gradient-to-r from-gradientStart to-gradientEnd p-0.5 rounded-2xl shadow-xl">
+                        <div class="main-part bg-white rounded-2xl">
+                        <div class="form p-8">
+                            <div class="flex justify-center">
+                            <div class="form-icon size-12 bg-gray-50 rounded-full shadow-4xl flex items-center justify-center"> 
+                                <i class="fa-solid fa-envelope bg-gradient-to-r from-gradientStart to-gradientEnd bg-clip-text text-transparent text-3xl"></i>
+                                </div>
+                            </div>
+                            <h3 class="text-main font-bold text-center text-xl mb-3">Send us a Message</h3>
+                            <p class="text-sm text-gray-700 font-medium text-center">We'll get back to you as soon as possible.</p>
+                            <div class="form grid grid-cols-1 md:grid-cols-2 mt-8 gap-5">
+                                <div class="name">
+                                    <label  class="block font-medium mb-2">Your Name</label>
+                                 <input class="w-full border rounded-xl p-2 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300" type="text" placeholder="Enter Your Name Here"></div>
+                                 <div class="email">
+                                    <label class="block font-medium mb-2">FirstName</label>
+                                <input class="w-full border rounded-xl p-2 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300" type="email" placeholder="Enter Youe Email Here"></div>
+                                  <div class="phone">
+                                 <label  class="block font-medium mb-2">Phone Number</label>
+                                 <input class="w-full border rounded-xl p-2 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300" type="number" placeholder="Enter Your Number Here">
+                            </div>
+                                <div class="subject">
+                                 <label  class="block font-medium mb-2">Subject</label>
+                                 <input class="w-full border rounded-xl p-2 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300" type="text" placeholder="Enter Your Subject Here">
+                            </div>
+                            </div>
+                            
+                             <div class="message  mt-8">
+                                 <label  class="block font-medium mb-2">Message</label>
+                                 <textarea rows="3" class="w-full border rounded-xl p-2 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300" type="text" placeholder="Write Your Message Here"></textarea>
+                            </div>
+                            <div class="send-btn mt-8">
+                                <button class="bg-gradient-to-r from-gradientStart to-gradientEnd  py-3 rounded-xl w-full text-white font-medium transition-all duration-300 ease  hover:shadow-xl"><i class="fa-solid fa-paper-plane me-3 "></i>Send Message</button>
+
+                            </div>
+                            </div>
+                        </div>
+                           </div>
+                           </div>
+
+                             <div class="contact-contnet  col-span-12 lg:col-span-6 order-1 lg:order-1">
+                   
+                   <div class="w-full h-full  image  overflow-hidden rounded-2xl ">
+                    <img class="w-full block h-full object-cover overflow-hidden  " src="images/image-12.png">
+                    </div>
+                </div>
+                    </div>
+ </div>
+
+ <!-- contacts-info -->
+
+ <div class="container mx-auto px-3 mt-14">
+    <div class="company-stats">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div
+                    class="stats rounded-2xl border shadow-lg p-4 flex gap-5 transition-all duration-300 ease hover:-translate-y-1 shadow-2xl group">
+                    <div
+                        class="icon size-[50px] rounded-full bg-primary flex shrink-0 justify-center items-center transition-all duration-300 ease group-hover:scale-[1.1]">
+                        <i class="fa-solid fa-location-dot text-xl text-white "></i>
+                       
+                    </div>
+                    <div class="stats-info">
+                        <h6 class="font-main text-lg font-semibold mb-2">Visit Us</h6>
+                        <p class="text-gray-500 font-medium text-md">SmartNest Office
+                            <br>Surat,Gujarat,India </p>
+                    </div>
+                </div>
+                <div
+                    class="stats rounded-2xl border shadow-lg p-4 flex gap-5 transition-all duration-300 ease hover:-translate-y-1 shadow-2xl group">
+                    <div
+                        class="icon size-[50px] rounded-full bg-[#10B981] flex shrink-0 justify-center items-center transition-all duration-300 ease group-hover:scale-[1.1]">
+                        
+                         <i class="fa-solid fa-phone text-2xl text-white"></i>
+                    </div>
+                    <div class="stats-info">
+                        
+                        <h6 class="font-main text-lg font-semibold mb-2">Call Us</h6>
+                        <p class="text-gray-500 font-medium text-md">+91 1234567890
+                            <br> MON-SAT | 9AM-6PM</p>
+                    </div>
+                </div>
+                <div
+                    class="stats rounded-2xl border shadow-lg p-4 flex gap-5 transition-all duration-300 ease hover:-translate-y-1 shadow-2xl group">
+                    <div
+                        class="icon size-[50px] rounded-full bg-sky-500 flex shrink-0 justify-center items-center transition-all duration-300 ease group-hover:scale-[1.1]">
+                        <i class="fa-solid fa-envelope text-2xl text-white"></i>
+                    </div>
+                    <div class="stats-info">
+                        
+                        <h6 class="font-main text-lg font-semibold mb-2">Email Us</h6>
+                        <p class="text-gray-500 font-medium text-md">hello@smartnest.com
+                            <br>we replay in 24 hours.
+                        </p>
+                    </div>
+                </div>
+                 <div
+                    class="stats rounded-2xl border shadow-lg p-4 flex gap-5 transition-all duration-300 ease hover:-translate-y-1 shadow-2xl group">
+                    <div
+                        class="icon size-[50px] rounded-full bg-blue-800 flex shrink-0 justify-center items-center transition-all duration-300 ease group-hover:scale-[1.1]">
+                        <i class="fa-solid fa-clock text-2xl text-white"></i>
+                    </div>
+                    <div class="stats-info">
+                        
+                        <h6 class="font-main text-lg font-semibold mb-2">Working Hours</h6>
+                        <p class="text-gray-500 font-medium text-md">MON-SAT
+                            <br>9AM-6PM
+                        </p>
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+
+            <!-- map  -->
+        <div class="map w-full h-[400px] mt-10">
+            <iframe class="w-full h-full block object-cover" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d119041.12044105185!2d72.76696322962579!3d21.190767990852013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1scdmi.in!5e0!3m2!1sen!2sin!4v1784882225275!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+
+ <!-- frequently ask questions        -->
+
+ <div class="container">
+    <div class="qanda mt-10 mb-14 ">
+               <h2 class="text-center font-main text-2xl font-semibold mb-5">Frequently Asked Questions</h2>
+             <div class="questions flex flex-col gap-5 w-full sm:w-4/5 mx-auto">
+                <div  class=" q-1 px-4 py-2  border-2 border-gray-300 rounded-xl overflow-hidden transition-all duration-300 ease ">
+                    <div class="div flex justify-between items-center">
+                    <p class=" text-md font-medium font-main">How can i contact SmartNest Support?</p>
+                    <i  class=" arrow fa-solid fa-chevron-down text-md transition-all duration-300 ease "></i>
+                    </div>
+                    <div  class="qanda-dropdown hidden py-2 transition-all duration-300 ease">
+                    <p class="answer text-gray-800 text-md text-justify py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, suscipit atque minima ipsam vitae sit veritatis quasi possimus laborum ipsum vero esse similique omnis vel incidunt iure non provident reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sed perferendis! Animi, delectus! Eos error modi, architecto unde sequi, necessitatibus inventore iusto delectus provident ut assumenda eveniet magni, rerum aspernatur.</p>
+                </div>
+                    
+                </div>
+                <div  class=" q-1 px-4 py-2  border-2 border-gray-300 rounded-xl overflow-hidden transition-all duration-300 ease">
+                    <div class="div flex justify-between items-center">
+                    <p class=" text-md font-medium font-main">Do you offer on-site installation?</p>
+                    <i  class="arrow fa-solid fa-chevron-down text-md transition-all duration-300 ease "></i>
+                    </div>
+                    <div  class="qanda-dropdown hidden py-2 transition-all duration-300 ease ">
+                    <p class="answer text-gray-800 text-md text-justify py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, suscipit atque minima ipsam vitae sit veritatis quasi possimus laborum ipsum vero esse similique omnis vel incidunt iure non provident reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sed perferendis! Animi, delectus! Eos error modi, architecto unde sequi, necessitatibus inventore iusto delectus provident ut assumenda eveniet magni, rerum aspernatur.</p>
+                </div>    
+                </div>
+
+                <div  class=" q-1 px-4 py-2  border-2 border-gray-300 rounded-xl overflow-hidden transition-all duration-300 ease">
+                    <div class="div flex justify-between items-center">
+                    <p class=" text-md font-medium font-main">Where is SmartNest located?</p>
+                    <i  class="arrow fa-solid fa-chevron-down text-md transition-all duration-300 ease "></i>
+                    </div>
+                    <div  class="qanda-dropdown hidden py-2 transition-all duration-300 ease ">
+                    <p class="answer text-gray-800 text-md text-justify py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, suscipit atque minima ipsam vitae sit veritatis quasi possimus laborum ipsum vero esse similique omnis vel incidunt iure non provident reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sed perferendis! Animi, delectus! Eos error modi, architecto unde sequi, necessitatibus inventore iusto delectus provident ut assumenda eveniet magni, rerum aspernatur.</p>
+                </div>
+                </div>
+
+                <div  class=" q-1 px-4 py-2  border-2 border-gray-300 rounded-xl overflow-hidden transition-all duration-300 ease">
+                    <div class="div flex justify-between items-center">
+                    <p class=" text-md font-medium font-main">How does long installation take?</p>
+                    <i  class="arrow fa-solid fa-chevron-down text-md transition-all duration-300 ease "></i>
+                    </div>
+                    <div  class="qanda-dropdown hidden py-2 transition-all duration-300 ease ">
+                    <p class="answer text-gray-800 text-md text-justify py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, suscipit atque minima ipsam vitae sit veritatis quasi possimus laborum ipsum vero esse similique omnis vel incidunt iure non provident reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, sed perferendis! Animi, delectus! Eos error modi, architecto unde sequi, necessitatibus inventore iusto delectus provident ut assumenda eveniet magni, rerum aspernatur.</p>
+                </div> 
+                </div>
+
+            
+             </div>
+      </div>
+ </div>
+
+
+
+ <!-- cta section -->
+    <div class="w-ful bg-gradient-to-r from-gradientStart to-gradientEnd">
+        <div class="container mx-auto px-3 mt-5 relative group z-10">
+            <div class="cta  p-4 block lg:flex justify-between items-center rounded-2xl">
+                <div class="info block sm:flex  items-center gap-5">
+                    <div class="div flex justify-center sm:start mb-2">
+                        <div class="cta-icon relative flex group transition-all duration-300 ease">
+                            <i class="fa-regular fa-house text-white/50 text-8xl relative"></i>
+                            <i
+                                class="fa-solid fa-wifi fa-canvas-square text-white absolute top-6 left-12 text-xl group-hover:text-[#10B981]"></i>
+                        </div>
+                    </div>
+                    <div class="cta-text text-center sm:text-start">
+                        <img class="h-full right-0 top-0 absolute opacity-20 -z-10 hidden sm:block "
+                            src="images/image-5.png">
+                        <h3 class="text-white text-2xl font-bold font-sens mb-1">Ready to Transform
+                            <br class="hidden lg:block">Your Home?
+                        </h3>
+                        <p class="text-white ">Join thousands of happy SmartNest users
+                            <br class="hidden lg:block"> and start your smart living journey today.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="cta-btn mt-6 lg:mt-0">
+                    <div class="btn flex sm:flex-row flex-col  items-center ">
+                        <button
+                            class="btn-primary  text-primary px-8 py-3 bg-white rounded-full font-semibold text-md hover:text-white transition-all duration-300 ease hover:bg-primary hover:shadow-lg mr-0 sm:mr-5 mb-3  sm:mb-0 ">Get
+                            Started Now</button>
+                        <button
+                            class="btn-secondary text-white px-8 py-3 bg-transparent rounded-full font-semibold text-md border border-white transition-all duration-300 ease hover:border-primary hover:text-primary hover:shadow-lg">Contact
+                            Us</button>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="w-full bg-[#0F172A] py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2  lg:grid-cols-4 gap-5">
+                <div class="box-1 col-span-2 lg:col-span-1">
+                    <div class="logo flex mb-4">
+                        <img class="size-9 mr-1" src="images/Icon-2.png">
+                        <h2 class="text-3xl font-bold text-heading font-main text-white mt-2">Smart<span
+                                class="text-[#06B6D4]">Nest</span></h2>
+                    </div>
+                    <p class="text-white mb-4">Making homes smarter,safer
+                        <br> and more connected through
+                        <br>intelligent automation.
+                    </p>
+                    <div class="social-icons flex gap-3">
+                        <div
+                            class="icons size-12 rounded-full border-2 border-white/20 flex items-center justify-center hover:border-primary">
+                            <i class="fa-brands fa-square-facebook text-white text-2xl"></i>
+                        </div>
+                        <div
+                            class="icons size-12 rounded-full border-2 border-white/20 flex items-center justify-center hover:border-primary">
+                            <i class="fa-brands fa-square-instagram text-white text-2xl"></i>
+                        </div>
+                        <div
+                            class="icons size-12 rounded-full border-2 border-white/20 flex items-center justify-center hover:border-primary">
+                            <i class="fa-brands fa-square-twitter text-white text-2xl"></i>
+                        </div>
+                        <div
+                            class="icons size-12 rounded-full border-2 border-white/20 flex items-center justify-center hover:border-primary">
+                            <i class="fa-brands fa-square-linkedin text-white text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-2">
+                    <h5 class="text-white font-medium uppercase mb-3">Company</h5>
+                    <ul class="">
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="index.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Home</a>
+                        </li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="features.html"><i
+                                    class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Feature</a></li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="solutions.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Solutions</a></li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="pricing.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Priceing</a></li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="contact.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="box-3">
+                    <h5 class="text-white font-medium uppercase mb-3">Resources</h5>
+                    <ul class="">
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Blog</a></li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Help Center</a>
+                        </li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Installation
+                                Guide</a></li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Privacy Policy</a>
+                        </li>
+                        <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block"
+                                href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Terms &
+                                Condition</a></li>
+                    </ul>
+                </div>
+
+                <div class="box-4 col-span-2 lg:col-span-1">
+                    <h5 class="text-white font-medium uppercase mb-3">Stay Updated</h5>
+                    <p class="text-gray-400 mb-8">Subscribe to our newsletter and get the latest updates, smart homes
+                        tips and exclusive offers.
+                    </p>
+                    <div
+                        class="subscribe border border-gray-600 rounded-full flex overflow-hidden hover:border-primary shadow-xl relative">
+                        <!-- <div class="detail-part w-4/5 px-2 py-2 text-gray-400 flex items-center gap-2"><i class="fa-regular fa-envelope text=text-gray-400 text-lg"></i> Enter Your Email</div> -->
+                        <i
+                            class="fa-regular fa-envelope text-gray-400 text-md absolute left-3 top-1/2 -translate-y-1/2 mt-[2px]"></i>
+                        <input type="email" placeholder="enter your email"
+                            class="pl-10 bg-transparent py-2 w-4/5 flex items-center text-gray-400">
+                        <div
+                            class="detail-part bg-gradient-to-r from-gradientStart to-gradientEnd w-1/5 px-4 py-2 flex justify-center items-center transition-all duration-300 ease group">
+                            <i class="fa-regular fa-paper-plane text-white text-md group-hover:scale-110"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 flex items-center gap-4 mt-8"><i
+                            class="fa-solid fa-house-circle-check text-accent text-md"></i> No spam. Unsubscribe
+                        anytime.</p>
+
+                </div>
+            </div>
+            <div class="container mx-auto px-4 mt-5 border-t border-gray-600">
+                <div class="copyright lg:flex items-center justify-between py-10 block">
+                    <p class="text-gray-400 mb-4">© 2026 <span class="text-accent font-medium">SmartNest.</span> All
+                        Rights Reserved.</p>
+                    <div class="policy mb-4">
+                        <ul class="block sm:flex ">
+                            <li><a class=" pr-4 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent border-r-0 sm:border-r border-gray-600 "
+                                    href="#"></i>Privacy Policy</a></li>
+                            <li><a class=" px-0 sm:px-4 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent border-r-0 sm:border-r border-gray-600"
+                                    href="#"></i>Terms of service</a></li>
+                            <li><a class=" pl-0 sm:pl-4 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent "
+                                    href="#"></i>Cokkies</a></li>
+                        </ul>
+                    </div>
+                    <div class="tag mb-4">
+                        <p class="text-gray-400"><i
+                                class="fa-regular fa-heart text-primary font-medium mr-3 text-lg"></i>Designed by <span
+                                class="text-accent font-medium">Birju Danak</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+
+let qanda=document.getElementsByClassName('q-1')
+
+for (let i=0;i<qanda.length;i++){
+
+    qanda[i].onclick = function(){
+        let arrow = this.getElementsByClassName('arrow')[0]
+        let answer = this.getElementsByClassName('qanda-dropdown')[0]
+
+        if(answer.style.display=='block'){
+            answer.style.display='none'
+            arrow.style.transform='rotate(0deg)'
+        }
+
+        else {
+            answer.style.display='block'
+            arrow.style.transform='rotate(180deg)'
+        }
+    }
+}
+
+
+</script>
+
+
+
+
+    
+</body>
+</html>
