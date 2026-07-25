@@ -47,7 +47,7 @@
 
  <div class="w-full min-h-screen">
      <div class="w-full  top-0 z-50   rounded-xl">
-        <div class="container mx-auto px-4  flex items-center py-4 justify-between  relative">
+        <div class="container mx-auto px-4 hidden sm:flex items-center py-4 justify-between   relative">
             <div class="logo flex items-end">
                 <img class="w-10 h-10 mr-1" src="images/logo.png">
                 <h2 class="text-3xl leading-none font-bold text-heading text-main">Smart<span class="text-[#06B6D4]">Nest</span></h2>
@@ -55,7 +55,7 @@
            
             <div class="buttons flex items-center gap-4">
                 <div class=" flex gap-4 items-center">
-                    <a class="font-medium md:inline-block hidden text-md px-3 py-2  text-[#0F172A] hover:text-primary   transition-all duration-300 rounded-lg"
+                    <a class="font-medium   text-md px-3 py-2  text-[#0F172A] hover:text-primary   transition-all duration-300 rounded-lg"
                         href="index.html"0><i class=" fa-solid fa-arrow-left mr-1"></i> Back to Home</a>
                 </div>
                 
@@ -66,8 +66,8 @@
     <!-- section -2 -->
      
         <div class="container mx-auto px-3 ">
-            <div class="grid grid-cols-12 py-4 flex items-center">
-                <div class="left-content lg:col-span-7 col-span-12 px-4 ">
+            <div class="grid grid-cols-12  flex items-center">
+                <div class="left-content col-span-12 lg:col-span-7 hidden sm:block px-4 py-4 ">
                     <div class="image relative">
                         <img class="w-full block object-cover" src="images/LOG IN.png">
                         <div class="title-text absolute left-0 top-[-20px]">
@@ -119,15 +119,15 @@
                 </div>
 
 
-                <div class="right-content lg:col-span-5 col-span-12">
+                <div class="right-content lg:col-span-5 col-span-12 py-4">
 
                      <div class="contact-form  rounded-2xl shadow-2xl">
                         <div class="main-part bg-white rounded-2xl">
                         <div class="form p-8">
                             <div class="flex justify-center">
                            <div class="logo flex items-end mb-5">
-                <img class="w-10 h-10 mr-1" src="images/logo.png">
-                <h2 class="text-3xl leading-none font-bold text-heading text-main">Smart<span class="text-[#06B6D4]">Nest</span></h2>
+                <img class="w-7 h-7 mr-1" src="images/logo.png">
+                <h2 class="text-2xl leading-none font-bold text-heading text-main">Smart<span class="text-[#06B6D4]">Nest</span></h2>
             </div>
                             </div>
                             <h3 class="text-main font-bold text-center text-2xl mb-3">Welcome Back</h3>
@@ -168,11 +168,11 @@
                                     <div class="options flex items-center gap-2">
                                       <input class="size-4" type="checkbox"><label class="text-sm ">Remember Me</label>
                                   </div>
-                                  <p class=" text-sm text-sky-600 font-medium">Forget Password?</p>
+                                  <button onclick="openPopup()" class=" text-sm text-sky-600 font-medium">Forget Password?</button>
                                </div>
                            
-                               <div class="send-btn mt-3 flex items-center">
-                                <button class="bg-gradient-to-r from-gradientStart to-gradientEnd  py-3 rounded-xl w-full text-white font-medium transition-all duration-300 ease  hover:shadow-xl">Log in <i class="fa-solid fa-arrow-right ml-2 "></i></button>
+                               <div class=" mt-3 flex items-center">
+                                <button id="send-btn" class="bg-gradient-to-r from-gradientStart to-gradientEnd  py-3 rounded-xl w-full text-white font-medium transition-all duration-300 ease  hover:shadow-xl">Log in <i class="fa-solid fa-arrow-right ml-2 "></i></button>
                             </div>
                               <div class=" relative divider  flex justify-center w-full px-4 h-0.5 bg-gray-300 mt-5">
                                 <p class="size-12 rounded-full flex justify-center items-center text-lg text-gray-500 text-center absolute top-[-25px]  left-1/2 -translate-x-1/2 bg-white">or</p>
@@ -196,6 +196,46 @@
         </div>
 
      </div>
+     </div>
+
+     <!-- Forgot Password Popup -->
+<div id="forgotPopup"
+    class="fixed inset-0 bg-black/50 hidden justify-center items-center z-50">
+
+    <div class="bg-white rounded-2xl p-8 w-[420px] shadow-xl">
+
+        <h2 class="text-2xl font-semibold mb-2">
+            Reset Password
+        </h2>
+
+        <p class="text-gray-500 mb-5">
+            Enter your email address and we'll send you a reset link.
+        </p>
+
+        <input
+            type="email"
+            placeholder="Enter your email"
+            class="w-full border rounded-lg px-4 py-3 mb-5 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none">
+
+        <div class="flex justify-end gap-3">
+
+            <button
+                onclick="closePopup()"
+                class="px-5 py-2 border rounded-lg">
+                Cancel
+            </button>
+
+            <button
+                onclick="sendLink()"
+                class="px-5 py-2 bg-gradient-to-r from-gradientStart to-gradientEnd text-white rounded-lg ">
+                Send Link
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 
      <script src="script.js"></script>
     
