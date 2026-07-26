@@ -68,15 +68,17 @@
             <div class="buttons flex items-center gap-4">
                 <div class=" flex gap-4 items-center">
                     <a class="md:inline-block hidden text-md px-3 py-2  text-[#0F172A] hover:text-primary  hover:bg-gray-100 transition-all duration-300 rounded-lg"
-                        href="#">Log In</a>
+                        href="login.html">Log In</a>
                     <a class=" md:inline-block hidden bg-gradient-to-r from-gradientStart to-gradientEnd text-md px-3 py-2 rounded-xl text-white shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease"
-                        href="#">Get Started</a>
+                        href="pricing.html">Get Started</a>
                 </div>
                 <div onclick="toggle()" class="toggle-mobile text-2xl  block lg:hidden px-3 "><i
                         class="fa-solid fa-bars text-heading flex items-center bg-gradient-to-r from-gradientStart to-gradientEnd bg-clip-text text-transparent"></i>
                     </div>
                     <div id="toggle-feature" class="mobile-menu absolute top-full left-0 w-full h-0 bg-white rounded-lg transition-all duration-300 ease overflow-hidden">
                         <ul>
+                            <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
+                                class="decoration-none px-4 py-2 block" href="login.html">Log In</a></li>
                             <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a class="decoration-none px-4 py-2 block"
                             href="index.html">Home</a></li>
                     <li class="text-md text-[#5B5FEF]   font-medium"><a
@@ -114,7 +116,7 @@
                     <div class="buttons flex items-center gap-4">
                         <div class="flex-column sm:flex gap-4 items-center">
                             <a class="block font-medium bg-primary text-md px-5 py-3 rounded-xl text-white shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 ease"
-                                href="#">Explore Solutions <i class="fa-solid fa-arrow-right ml-2"></i></a>
+                                href="features.html#features_card">Explore Features <i class="fa-solid fa-arrow-right ml-2"></i></a>
                             <a class="block text-md px-5 py-3 mt-3 sm:mt-0  text-[#0F172A] hover:text-primary border font-medium hover:border-primary transition-all duration-300 rounded-lg "
                                 href="#"><i class="fa-solid fa-circle-play mr-2 "></i>Watch Demo</a>
                         </div>
@@ -138,7 +140,7 @@
         <h2 class="font-semibold text-2xl font-main mt-2">Smart Features for Every Part of Your Home</h2>
     </div>
 
-<div class="smart-features">
+<div id="features_card" class="smart-features">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
         <div class="card group">
             <div class="grid grid-cols-12 rounded-2xl shadow-2xl overflow-hidden items-center transition-all duration-300 ease hover:-translate-y-1">
@@ -289,8 +291,8 @@
         <div class="info block sm:flex  items-center gap-5">
             <div class="div flex justify-center sm:start mb-2">
         <div class="cta-icon relative flex  transition-all duration-300 ease">
-            <i class="fa-regular fa-house text-white/50 text-8xl relative group/link"></i>
-            <i class="fa-solid fa-wifi fa-canvas-square text-white absolute top-7 left-12 text-xl group-hover/link:text-[#10B981]"></i>
+            <i class="fa-regular fa-house text-white/50 text-8xl relative group"></i>
+            <i class="fa-solid fa-wifi fa-canvas-square text-white absolute top-7 left-12 text-xl group-hover:text-[#10B981]"></i>
         </div>
         </div>
         <div class="cta-text text-center sm:text-start">
@@ -305,8 +307,8 @@
 
 <div class="cta-btn mt-6 lg:mt-0">
     <div class="btn flex sm:flex-row flex-col  items-center ">
-        <button class="btn-primary  text-primary px-8 py-3 bg-white rounded-full font-semibold text-md hover:text-white transition-all duration-300 ease hover:bg-primary hover:shadow-lg mr-0 sm:mr-5 mb-3  sm:mb-0 ">Get Started Now</button>
-        <button class="btn-secondary text-white px-8 py-3 bg-transparent rounded-full font-semibold text-md border border-white transition-all duration-300 ease hover:border-primary hover:text-primary hover:shadow-lg">Contact Us</button>
+        <a class="btn-primary  text-primary px-8 py-3 bg-white rounded-full font-semibold text-md hover:text-white transition-all duration-300 ease hover:bg-primary hover:shadow-lg mr-0 sm:mr-5 mb-3  sm:mb-0" href="pricing.html">Get Started Now</a>
+        <a class="btn-secondary text-white px-8 py-3 bg-transparent rounded-full font-semibold text-md border border-white transition-all duration-300 ease hover:border-primary hover:text-primary hover:shadow-lg" href="contact.html">Contact Us</a>
 
     </div>
 </div>
@@ -316,7 +318,7 @@
  </div>
 
  <!-- footer -->
-  <div class="w-full bg-[#0F172A] py-10">
+     <div class="w-full bg-[#0F172A] py-10">
         <div class="container mx-auto px-4">
         <div class="grid grid-cols-2  lg:grid-cols-4 gap-5">
             <div class="box-1 col-span-2 lg:col-span-1">
@@ -346,21 +348,21 @@
             <div class="box-2">
                    <h5 class="text-white font-medium uppercase mb-3">Company</h5>
                    <ul class="">
-                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="index.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Home</a></li>
-                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="features.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Feature</a></li>
-                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="solutions.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Solutions</a></li>
-                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="pricing.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Priceing</a></li>
-                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="contact.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Contact Us</a></li>
+                    <li><a href="index.html" class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Home</a></li>
+                    <li><a href="features.html" class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Feature</a></li>
+                    <li><a href="solutions.html" class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Solutions</a></li>
+                    <li><a  href="pricing.html" class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Priceing</a></li>
+                    <li><a href="contact.html" class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Contact Us</a></li>
                    </ul>
             </div>
             <div class="box-3">
                    <h5 class="text-white font-medium uppercase mb-3">Resources</h5>
                    <ul class="">
-                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Blog</a></li>
-                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Help Center</a></li>
-                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Installation Guide</a></li>
-                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Privacy Policy</a></li>
-                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Terms & Condition</a></li>
+                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="blog.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Blog</a></li>
+                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="contact.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Help Center</a></li>
+                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="solutions.html#installtion-steps"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Installation Guide</a></li>
+                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="privacy.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Privacy Policy</a></li>
+                    <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="termsandcondtions.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Terms & Condition</a></li>
                    </ul>
             </div>
 
@@ -372,8 +374,8 @@
                         <!-- <div class="detail-part w-4/5 px-2 py-2 text-gray-400 flex items-center gap-2"><i class="fa-regular fa-envelope text=text-gray-400 text-lg"></i> Enter Your Email</div> -->
                          <i class="fa-regular fa-envelope text-gray-400 text-md absolute left-3 top-1/2 -translate-y-1/2 mt-[2px]"></i>
                         <input type="email" placeholder="enter your email"  class="pl-10 bg-transparent py-2 w-4/5 flex items-center text-gray-400">
-                        <div class="detail-part bg-gradient-to-r from-gradientStart to-gradientEnd w-1/5 px-4 py-2 flex justify-center items-center transition-all duration-300 ease group"><i class="fa-regular fa-paper-plane text-white text-md group-hover:scale-110"></i>
-                        </div>
+                        <button  class=" send-btn detail-part bg-gradient-to-r from-gradientStart to-gradientEnd w-1/5 px-4 py-2 flex justify-center items-center transition-all duration-300 ease group"><i class="fa-regular fa-paper-plane text-white text-md group-hover:scale-110"></i>
+                        </button>
                    </div>
                    <p class="text-gray-400 flex items-center gap-4 mt-8"><i class="fa-solid fa-house-circle-check text-accent text-md"></i> No spam. Unsubscribe anytime.</p>
                    
@@ -384,9 +386,9 @@
                 <p class="text-gray-400 mb-4">© 2026 <span class="text-accent font-medium">SmartNest.</span> All Rights Reserved.</p>
                 <div class="policy mb-4">
                     <ul class="block sm:flex ">
-                    <li><a class=" pr-4 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent border-r-0 sm:border-r border-gray-600 " href="#"></i>Privacy Policy</a></li>
-                    <li><a class=" px-0 sm:px-4 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent border-r-0 sm:border-r border-gray-600" href="#"></i>Terms of service</a></li>
-                    <li><a class=" pl-0 sm:pl-4 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent " href="#"></i>Cokkies</a></li>
+                    <li><a class=" pr-4 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent border-r-0 sm:border-r border-gray-600 " href="privacy.html"></i>Privacy Policy</a></li>
+                    <li><a class=" px-0 sm:px-4 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent border-r-0 sm:border-r border-gray-600" href="termsandcondtions.html"></i>Terms of service</a></li>
+                    <li><a class=" pl-0 sm:pl-4 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent " href="privacy.html#cookies"></i>Cookies</a></li>
                     </ul>
                 </div>
                 <div class="tag mb-4">

@@ -1,6 +1,6 @@
 // for login-form
 
-let send_btn=document.getElementsByClassName('send-btn')
+let send_btn=document.querySelectorAll('.send-btn')
 for(let i=0;i<send_btn.length;i++){
  send_btn[i].onclick= function () {
    alert("Your Request has submiited Successfully. we will contact you shortly.")
