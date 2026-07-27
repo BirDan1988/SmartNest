@@ -1,8 +1,8 @@
-// for login-form
+
 
 let send_btn=document.querySelectorAll('.send-btn')
 for(let i=0;i<send_btn.length;i++){
- send_btn[i].onclick= function () {
+ send_btn[i].onclick= function ( ) {
    alert("Your Request has submiited Successfully. we will contact you shortly.")
 }
  
@@ -14,10 +14,11 @@ for(let i=0;i<send_btn.length;i++){
 
 
 
+
 function register() {
     let reg = document.getElementsByClassName('register')
     let reg_toggle =document.getElementById('reg-toggle')
-    let btn=document.getElementById('send-btn')
+    let btn=document.getElementById('log_reg')
 
 
         for (let i = 0; i < reg.length; i++) {
@@ -32,10 +33,12 @@ function register() {
 } 
 
 
+// for login-form
+
 function login(){
 let reg = document.getElementsByClassName('register')
 let reg_toggle =document.getElementById('reg-toggle')
-let btn=document.getElementById('send-btn')
+let btn=document.getElementById('log_reg')
 
 
         for (let i = 0; i < reg.length; i++) {
@@ -76,3 +79,34 @@ function sendLink(){
 
 }
 
+
+// menu-dropdown toggle
+
+  let i =document.getElementById('toggle')
+        function toggle(){
+          if(i.style.height==='320px'){
+              i.style.height='0'
+          }
+          else {
+            i.style.height='320px'
+          }
+
+        }
+
+
+
+        // form-validation
+
+        // function send_btn(){
+
+        //    let fullname=document.getElementById('fullname')
+        //    let email=document.getElementById('email')
+        //    let phone=document.getElementById('mobile')
+        //    let password=document.getElementById('passwod')
+        //    let confirm_password=document.getElementById('confirm-password')
+
+        //    if (!fullname){
+        //     alert("Enter Your Fullname")
+        //    }
+
+        // }

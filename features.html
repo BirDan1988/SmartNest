@@ -75,7 +75,7 @@
                 <div onclick="toggle()" class="toggle-mobile text-2xl  block lg:hidden px-3 "><i
                         class="fa-solid fa-bars text-heading flex items-center bg-gradient-to-r from-gradientStart to-gradientEnd bg-clip-text text-transparent"></i>
                     </div>
-                    <div id="toggle-feature" class="mobile-menu absolute top-full left-0 w-full h-0 bg-white rounded-lg transition-all duration-300 ease overflow-hidden">
+                    <div id="toggle" class="mobile-menu absolute top-full left-0 w-full h-0 bg-white rounded-lg transition-all duration-300 ease overflow-hidden">
                         <ul>
                             <li class="text-md text-[#64748B] hover:text-[#5B5FEF] font-medium"><a
                                 class="decoration-none px-4 py-2 block" href="login.html">Log In</a></li>
@@ -399,17 +399,10 @@
         </div>
      </div>
 
-<script>
-     let i =document.getElementById('toggle-feature')
-        function toggle(){
-          if(i.style.height==='320px'){
-              i.style.height='0'
-          }
-          else {
-            i.style.height='320px'
-          }
+     <script src="script.js"></script>
 
-        }
+<script>
+   
 
     
 
