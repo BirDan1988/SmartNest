@@ -110,3 +110,58 @@ function sendLink(){
         //    }
 
         // }
+
+
+        // price-filter
+
+        let filter=document.getElementsByClassName('filter-pill')[0]
+     let pr1= document.getElementById('price-1')
+     let pr2= document.getElementById('price-2')
+     let pr3= document.getElementById('price-3')
+
+     function ball(){
+
+        if(filter.style.justifyContent==='end'){
+            filter.style.justifyContent='start'
+            pr1.innerHTML='$4.99 <span class="text-gray-500 text-xs font-medium">/month</span>'
+            pr2.innerHTML='$9.99 <span class="text-gray-500 text-xs font-medium">/month</span>'
+            pr3.innerHTML='$14.99 <span class="text-gray-500 text-xs font-medium">/month</span>'
+
+        }
+
+        else {
+            filter.style.justifyContent='end'
+              pr1.innerHTML='$49.99 <span class="text-gray-500 text-xs font-medium">/year</span>'
+              pr2.innerHTML='$99.99 <span class="text-gray-500 text-xs font-medium">/year</span>'
+              pr3.innerHTML='$149.99 <span class="text-gray-500 text-xs font-medium">/year</span>'
+        }
+        
+     }
+
+
+    // faq-part
+
+    let qanda = document.getElementsByClassName('q-1');
+
+for (let i = 0; i < qanda.length; i++) {
+
+    qanda[i].onclick = function () {
+
+        let arrow = this.getElementsByClassName('arrow')[0];
+        let answer = this.getElementsByClassName('qanda-dropdown')[0];
+
+        if (answer.style.display === 'block') {
+
+            answer.style.display = 'none';
+            arrow.style.transform = 'rotate(0deg)';
+
+        } else {
+
+            answer.style.display = 'block';
+            arrow.style.transform = 'rotate(180deg)';
+
+        }
+
+    }
+
+}

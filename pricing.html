@@ -352,7 +352,7 @@
         </div>
 
     <!-- .testimonaials -->
-     <div class="testimonials mt-14">
+     <!-- <div class="testimonials mt-14">
         <h2 class="text-2xl font-main font-semibold text-center mb-10">Testimonials</h2>
         <div class="grid grid-cols-3 gap-5">
             <div class="card py-3 px-5 border rounded-2xl ">
@@ -438,13 +438,13 @@
                  <i class="fa-solid fa-circle text-md text-gray-300 border-primary"></i>
             </div>
         </div>
-     </div>
+     </div> -->
 
      <!-- frequently ask question -->
       <div class="qanda mt-10 mb-14 ">
                <h2 class="text-center font-main text-2xl font-semibold mb-5">Frequently Asked Questions</h2>
              <div class="questions flex flex-col gap-5 w-full sm:w-4/5 mx-auto">
-                <div  class=" q-1 px-4 py-2  border-2 border-gray-300 rounded-xl overflow-hidden transition-all duration-300 ease ">
+                <div  class=" q-1 px-4 py-3  border-2 border-gray-300 rounded-xl overflow-hidden transition-all duration-300 ease ">
                     <div class="div flex justify-between items-center">
                     <p class=" text-md font-medium font-main">Can i change or upgrade my plan later?</p>
                     <i  class=" arrow fa-solid fa-chevron-down text-md transition-all duration-300 ease "></i>
@@ -553,7 +553,7 @@
      <div class="w-full bg-[#0F172A] py-10">
         <div class="container mx-auto px-4">
         <div class="grid grid-cols-2  lg:grid-cols-4 gap-5">
-            <div class="box-1 col-span-2 lg:col-span-1">
+            <div class="box-1 col-span-2 lg:col-span-1 ">
                 <div class="logo flex mb-4">
                 <img class="size-9 mr-1" src="images/Icon-2.png">
                 <h2 class="text-3xl font-bold text-heading font-main text-white mt-2">Smart<span class="text-[#06B6D4]">Nest</span></h2>
@@ -577,7 +577,7 @@
              </div>
             </div>
 
-            <div class="box-2">
+            <div class="box-2 col-span-2 sm:col-span-1">
                    <h5 class="text-white font-medium uppercase mb-3">Company</h5>
                    <ul class="">
                     <li><a href="index.html" class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Home</a></li>
@@ -587,7 +587,7 @@
                     <li><a href="contact.html" class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="#"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Contact Us</a></li>
                    </ul>
             </div>
-            <div class="box-3">
+            <div class="box-3 col-span-2 sm:col-span-1">
                    <h5 class="text-white font-medium uppercase mb-3">Resources</h5>
                    <ul class="">
                     <li><a class=" py-2 text-gray-400 text-md transition-all duration-300 ease hover:translate-x-1 hover:text-accent block" href="blog.html"><i class="fa-solid fa-caret-right text-primary/70 mr-2"></i>Blog</a></li>
@@ -651,30 +651,7 @@
 
     <script>
 
-let qanda = document.getElementsByClassName('q-1');
 
-for (let i = 0; i < qanda.length; i++) {
-
-    qanda[i].onclick = function () {
-
-        let arrow = this.getElementsByClassName('arrow')[0];
-        let answer = this.getElementsByClassName('qanda-dropdown')[0];
-
-        if (answer.style.display === 'block') {
-
-            answer.style.display = 'none';
-            arrow.style.transform = 'rotate(0deg)';
-
-        } else {
-
-            answer.style.display = 'block';
-            arrow.style.transform = 'rotate(180deg)';
-
-        }
-
-    }
-
-}
 
 
 
@@ -712,24 +689,24 @@ for (let i = 0; i < qanda.length; i++) {
      let pr2= document.getElementById('price-2')
      let pr3= document.getElementById('price-3')
 
-     function ball(){
+    //  function ball(){
 
-        if(filter.style.justifyContent==='end'){
-            filter.style.justifyContent='start'
-            pr1.innerHTML='$4.99 <span class="text-gray-500 text-xs font-medium">/month</span>'
-            pr2.innerHTML='$9.99 <span class="text-gray-500 text-xs font-medium">/month</span>'
-            pr3.innerHTML='$14.99 <span class="text-gray-500 text-xs font-medium">/month</span>'
+    //     if(filter.style.justifyContent==='end'){
+    //         filter.style.justifyContent='start'
+    //         pr1.innerHTML='$4.99 <span class="text-gray-500 text-xs font-medium">/month</span>'
+    //         pr2.innerHTML='$9.99 <span class="text-gray-500 text-xs font-medium">/month</span>'
+    //         pr3.innerHTML='$14.99 <span class="text-gray-500 text-xs font-medium">/month</span>'
 
-        }
+    //     }
 
-        else {
-            filter.style.justifyContent='end'
-              pr1.innerHTML='$49.99 <span class="text-gray-500 text-xs font-medium">/year</span>'
-              pr2.innerHTML='$99.99 <span class="text-gray-500 text-xs font-medium">/year</span>'
-              pr3.innerHTML='$149.99 <span class="text-gray-500 text-xs font-medium">/year</span>'
-        }
+    //     else {
+    //         filter.style.justifyContent='end'
+    //           pr1.innerHTML='$49.99 <span class="text-gray-500 text-xs font-medium">/year</span>'
+    //           pr2.innerHTML='$99.99 <span class="text-gray-500 text-xs font-medium">/year</span>'
+    //           pr3.innerHTML='$149.99 <span class="text-gray-500 text-xs font-medium">/year</span>'
+    //     }
         
-     }
+    //  }
      </script>
 </body>
 </html>
