@@ -10,52 +10,7 @@ for(let i=0;i<send_btn.length;i++){
 
 
 
-
-
-
-
-
-// function register() {
-//     let reg = document.getElementsByClassName('register')
-//     let reg_toggle =document.getElementById('reg-toggle')
-//     let btn=document.getElementById('log_reg')
-
-
-//         for (let i = 0; i < reg.length; i++) {
-//             reg[i].style.display = 'block'
-
-//         }
-        
-//         btn.innerHTML='Register <i class="fa-solid fa-arrow-right ml-2 "></i>'
-//         reg_toggle.innerHTML='Allready an Account? <button onclick="login()" id="reg-btn" class=" text-sky-500 font-medium">Log in Here</button>'
-
-        
-// } 
-
-
-// for login-form
-
-// function login(){
-// let reg = document.getElementsByClassName('register')
-// let reg_toggle =document.getElementById('reg-toggle')
-// let btn=document.getElementById('log_reg')
-
-
-//         for (let i = 0; i < reg.length; i++) {
-//             reg[i].style.display = 'none'
-
-//         }
-        
-//         btn.innerHTML='Log in <i class="fa-solid fa-arrow-right ml-2 "></i>'
-//         document.getElementById('reg-toggle').innerHTML= 'Dont have an Account? <button onclick="register()" id="reg-btn" class=" text-sky-500 font-medium">Register</button>'
-// }
-
-
-function fgtpassword(){
-
-
-}
-
+// forget password
 
 function openPopup(){
 
@@ -92,24 +47,6 @@ function sendLink(){
           }
 
         }
-
-
-
-        // form-validation
-
-        // function send_btn(){
-
-        //    let fullname=document.getElementById('fullname')
-        //    let email=document.getElementById('email')
-        //    let phone=document.getElementById('mobile')
-        //    let password=document.getElementById('passwod')
-        //    let confirm_password=document.getElementById('confirm-password')
-
-        //    if (!fullname){
-        //     alert("Enter Your Fullname")
-        //    }
-
-        // }
 
 
         // price-filter
@@ -170,6 +107,8 @@ for (let i = 0; i < qanda.length; i++) {
 
 // login form
 
+$(document).ready(function(){
+
 $(document).on('click','#regbtn',function(){
 
     $('.register').show()
@@ -186,12 +125,11 @@ $(document).on('click','#lgbtn',function(){
     $('#log_reg').text('Log In')
 })
 
-// function register(){
-//     alert("Check your Email and confirm")
-// }
+})
 
-function formsubmit(){
-
+let btn=document.getElementById('log_reg')
+btn.addEventListener('click',function(){
+ if(btn.innerText=='Register'){
 let fullname=document.getElementById('fullname').value
 let email=document.getElementById('email').value
 let mobile= document.getElementById('mobile').value
@@ -204,7 +142,7 @@ alert('all field are mendotary')
 return
 }
 
-if(mobile == NaN){
+if(isNaN(mobile)){
     alert('Its not a number')
     return
 }
@@ -220,7 +158,90 @@ if(mobile.length!=10){
     }
 
  else {
-    alert('Your have successfully register/login')
+    alert('Your have successfully register. Please check your email for conformation')
     return
  }   
+}
+
+if(btn.innerText=='Log In'){
+    let email=document.getElementById('email').value
+    let password =document.getElementById('password').value
+    if(!email){
+        alert('Enter Email')
+        return
+    }
+    if(!password){
+        alert('Please Enter a Password')
+        return
+    }
+    else {
+    alert('Your have successfully login')
+
+}
+
+}
+
+
+
+
+ })
+
+
+
+
+
+
+
+
+// home-contact-form
+
+
+
+function submit_contact_form(){
+
+  let fname=document.getElementById('form_name').value
+   let femail=document.getElementById('form_email').value
+   let fnumber=document.getElementById('form_number').value
+   let fsubject=document.getElementById('form_subject').value
+   let fmsg=document.getElementById('form_msg').value
+
+   if (!fname){
+    alert('Please Enter the Name')
+    return
+   }
+
+   if(!femail){
+    alert('Please Enter an Email')
+    return
+   }
+
+   if(!fnumber){
+    alert('Please Enter a Number')
+    return
+   }
+
+   if(fnumber==NaN){
+    alert('Please Enter only digit')
+    return
+   }
+
+   if(fnumber.length!=10){
+    alert('Please Enter 10 digit Number')
+    return
+   }
+
+   if(!fsubject){
+    alert('Please Enter Subject')
+    return
+   }
+
+   if(!fmsg){
+    alert('Please Enter your Message.')
+    return
+   }
+
+   else {
+    alert('Your Informatio successfully submmited. We will contact you shortly.')
+   }
+
 }
