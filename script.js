@@ -15,40 +15,40 @@ for(let i=0;i<send_btn.length;i++){
 
 
 
-function register() {
-    let reg = document.getElementsByClassName('register')
-    let reg_toggle =document.getElementById('reg-toggle')
-    let btn=document.getElementById('log_reg')
+// function register() {
+//     let reg = document.getElementsByClassName('register')
+//     let reg_toggle =document.getElementById('reg-toggle')
+//     let btn=document.getElementById('log_reg')
 
 
-        for (let i = 0; i < reg.length; i++) {
-            reg[i].style.display = 'block'
+//         for (let i = 0; i < reg.length; i++) {
+//             reg[i].style.display = 'block'
 
-        }
+//         }
         
-        btn.innerHTML='Register <i class="fa-solid fa-arrow-right ml-2 "></i>'
-        reg_toggle.innerHTML='Allready an Account? <button onclick="login()" id="reg-btn" class=" text-sky-500 font-medium">Log in Here</button>'
+//         btn.innerHTML='Register <i class="fa-solid fa-arrow-right ml-2 "></i>'
+//         reg_toggle.innerHTML='Allready an Account? <button onclick="login()" id="reg-btn" class=" text-sky-500 font-medium">Log in Here</button>'
 
         
-} 
+// } 
 
 
 // for login-form
 
-function login(){
-let reg = document.getElementsByClassName('register')
-let reg_toggle =document.getElementById('reg-toggle')
-let btn=document.getElementById('log_reg')
+// function login(){
+// let reg = document.getElementsByClassName('register')
+// let reg_toggle =document.getElementById('reg-toggle')
+// let btn=document.getElementById('log_reg')
 
 
-        for (let i = 0; i < reg.length; i++) {
-            reg[i].style.display = 'none'
+//         for (let i = 0; i < reg.length; i++) {
+//             reg[i].style.display = 'none'
 
-        }
+//         }
         
-        btn.innerHTML='Log in <i class="fa-solid fa-arrow-right ml-2 "></i>'
-        document.getElementById('reg-toggle').innerHTML= 'Dont have an Account? <button onclick="register()" id="reg-btn" class=" text-sky-500 font-medium">Register</button>'
-}
+//         btn.innerHTML='Log in <i class="fa-solid fa-arrow-right ml-2 "></i>'
+//         document.getElementById('reg-toggle').innerHTML= 'Dont have an Account? <button onclick="register()" id="reg-btn" class=" text-sky-500 font-medium">Register</button>'
+// }
 
 
 function fgtpassword(){
@@ -164,4 +164,63 @@ for (let i = 0; i < qanda.length; i++) {
 
     }
 
+}
+
+
+
+// login form
+
+$(document).on('click','#regbtn',function(){
+
+    $('.register').show()
+        $('#reg_toggle').html('Allready an Account? <button onclick="login()" id="lgbtn" class=" text-sky-500 font-medium">Log in Here</button>')
+     $('#log_reg').text('Register')
+    
+})
+
+
+$(document).on('click','#lgbtn',function(){
+
+    $('.register').hide()
+    $('#reg_toggle').html('Dont have an Account? <button onclick="register()" id="regbtn" class=" text-sky-500 font-medium">Register</button>')
+    $('#log_reg').text('Log In')
+})
+
+// function register(){
+//     alert("Check your Email and confirm")
+// }
+
+function formsubmit(){
+
+let fullname=document.getElementById('fullname').value
+let email=document.getElementById('email').value
+let mobile= document.getElementById('mobile').value
+let password =document.getElementById('password').value
+let cnf_password=document.getElementById('confirm-password').value
+
+
+if(fullname=="" || email== "" || mobile=="" || password=="" || cnf_password==""){
+alert('all field are mendotary')
+return
+}
+
+if(mobile == NaN){
+    alert('Its not a number')
+    return
+}
+
+if(mobile.length!=10){
+        alert('Please Enter 10 digit number')
+        return
+    }
+
+    if(password!==cnf_password){
+        alert('Password not match')
+        return
+    }
+
+ else {
+    alert('Your have successfully register/login')
+    return
+ }   
 }
