@@ -125,6 +125,37 @@ $(document).on('click','#lgbtn',function(){
     $('#log_reg').text('Log In')
 })
 
+// testimonail slider
+$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:false,
+    dots: true,
+     slideBy: 1,
+     dotsEach: 1,
+    responsive:{
+        0:{
+            items:1
+        },
+        640:{
+            items:2
+        },
+        1024:{
+            items:3
+        }
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
 })
 
 let btn=document.getElementById('log_reg')
@@ -245,3 +276,7 @@ function submit_contact_form(){
    }
 
 }
+
+
+// slider for testimonial
+ 
